@@ -1,5 +1,6 @@
 #ifndef _MEMPOOL_H
 #define _MEMPOOL_H
+
 #include "header.h"
 #include <stdio.h>
 #include <stdbool.h>
@@ -22,4 +23,5 @@ typedef struct {
 void initialize_pool(memory_pool_t* mempool);
 char* allocate(memory_pool_t* mempool);
 void deallocate(memory_pool_t* mempool, void* ptr);
+
 #endif

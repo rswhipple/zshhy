@@ -1,3 +1,6 @@
+#ifndef HELPER_H
+#define HELPER_H
+
 #include "header.h"
 
 // function prototypes
@@ -10,3 +13,5 @@ char* my_strcat(char *dst, char *src);
 int my_strchr_index(char* str_1, char char_1);
 void my_putstr(char *str);
 void my_putstrerr(char *str);
+
+#endif

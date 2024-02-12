@@ -1,3 +1,6 @@
+#ifndef MEMORY_H
+#define MEMORY_H
+
 #include "header.h"
 
 // function pointers
@@ -12,3 +15,5 @@ int simple_exit_failure(char** env, t_array *tokens);
 // testing functions
 void print_t_array(t_array* tokens);
 void print_array(char** array);
+
+#endif

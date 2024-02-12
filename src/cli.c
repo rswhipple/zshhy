@@ -97,7 +97,7 @@ char **create_env(char** env)
     return my_env;
 }
 
-void display_prompt()
+void display_prompt(void)
 {
     my_putstr("zshhy> ");
     // fflush(stdout);
