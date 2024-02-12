@@ -1,4 +1,4 @@
-TARGET = zsh
+TARGET = zshhy
 SRC_DIRS := ./src
 OBJS = $(SRCS:.c=.o)
 CC = gcc
