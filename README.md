@@ -2,7 +2,7 @@
 A custom shell in C.
 
 ## Task
-Create a UNIX command interpreter that can handle both built-in and binary functions. 
+Create a UNIX command interpreter that can handle both builtin and binary functions. 
 
 Only basic command lines are to be executed; no pipes, redirections or any other advanced features. 
 
@@ -17,11 +17,11 @@ Multiline macros are forbidden.
 Macros with logic (while/if/variables/...) are forbidden.
 
 ## Description
-The executables are those found in the path, as indicated in the PATH variable.
+Binary functions (executables) are those found in the path, as indicated in the PATH variable.
 
-If an executable cannot be found, an error message is displayed and than the prompt is shown again. Errors must be dealt with and must display the appropriate message on the error output. You must correctly handle the PATH and the environment (by copying and restoring the initial env).
+If an executable cannot be found, an error message is displayed and than the prompt is shown again. Errors are dealt with and the appropriate message is displayed on the error output. 
 
-You must implement the following builtins: echo, cd, setenv, unsetenv, env, exit, pwd and which.
+The following builtins are implemented: echo, cd, setenv, unsetenv, env, exit, pwd and which.
 
 
 ## Installation
