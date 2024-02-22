@@ -22,7 +22,6 @@ int my_strcmp(char* str_1, char* str_2)
     } else {
         return 1;
     }
-
 }
 
 int my_strncmp(char* str_1, char* str_2, int index)
