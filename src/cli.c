@@ -5,15 +5,6 @@
 #include "../inc/executer.h" 
 #include "../inc/memory.h" 
 
-int main(int ac, char** av, char** env)
-{
-    // Run shell
-    if (zshhy_cli(ac, av, env)) { 
-        return EXIT_FAILURE; 
-    }
-
-    return EXIT_SUCCESS;
-}
 
 int zshhy_cli(int ac, char** av, char** env) 
 { 
@@ -55,7 +46,7 @@ int zshhy_loop(char** my_env)
     char* cmd = NULL;
 
     while (1) {
-        // display_prompt();        // FIX PROMPT ISSUE, TALK TO GAETAN
+        display_prompt();
         cmd = get_cmd();
         if (!cmd || cmd[0] == '\0') { return EXIT_SUCCESS; } // handles EOF
         if ((my_strcmp(cmd, "quit\n") == 0)) {
@@ -99,8 +90,13 @@ char **create_env(char** env)
 
 void display_prompt(void)
 {
-    my_putstr("zshhy> ");
-    // fflush(stdout);
+    my_putstr("zshhy > ");
+}
+
+void print_usage(void)
+{
+    char *message = "USAGE\n\tBuiltins:\n\techo, cd, setenv, unsetenv, env, exit, pwd and which\n\nDESCRIPTION\n\tUse any of the listed builtin functions as in a standard shell\n\t\tcd handles the '-' flag\n\t\techo handles the special character '$'.\n\n\tAll binary functions available to your environment are usable.\n";
+    my_putstr(message);
 }
 
 char* get_cmd(void) 
