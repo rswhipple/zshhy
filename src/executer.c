@@ -64,6 +64,7 @@ int execute_binary(t_array* tokens, char** my_env)
     if (!(path_ptr = binary_path(&tokens, my_env, path_options, &path))) { 
         if (!(path_ptr = custom_binary_path(&tokens, &path))) {
             my_putstrerr("Error executing command: No such file\n");
+            print_usage();
             return EXIT_FAILURE;
         }
     }
