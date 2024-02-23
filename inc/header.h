@@ -29,6 +29,7 @@ int zshhy_cli(int ac, char** av, char** env);
 int zshhy_loop(char** env);
 char **create_env(char** env);
 void display_prompt(void);
+void print_usage(void);
 char *get_cmd(void);
 void print_my_env(char** my_env);
 char *format_command_str(int ac, char** av);
