@@ -8,11 +8,11 @@ The following builtins are implemented: echo, cd, setenv, unsetenv, env, exit, p
 
 Demonstrated knowledge:
 
-- **UNIX System Calls**: Utilized system calls such as `fork()`, `exec()`, and `wait()` to execute binary functions, showcasing an understanding of process creation and management in UNIX-like systems.
+- **UNIX System Calls**: Used system calls such as `fork()`, `exec()`, and `wait()` to execute binary functions, showing an understanding of process creation and management in UNIX-like systems.
 
-- **Environment Variable Management**: Implemented functionality to modify environment variables (`setenv`, `unsetenv`) and access them (`env`), demonstrating knowledge of how shells interact with the operating system environment as well as how they acccess and execute commands.
+- **Environment Variable Management**: Modified environment variables (`setenv`, `unsetenv`) and accessed them (`env`), demonstrating knowledge of how shells interact with the operating system environment.
 
-- **Memory Management**: Integrated a custom memory pool for efficient memory allocation and deallocation, highlighting advanced memory management techniques and reducing the risk of memory leaks in long-running applications.
+- **Memory Management**: Created a custom memory pool for efficient memory allocation and deallocation, reducing the risk of memory leaks in long-running applications.
 
 
 ## How To Use
