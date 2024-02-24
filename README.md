@@ -1,9 +1,5 @@
 # Zshhy
-A custom shell in C.
-
-Zshhy is a UNIX command interpreter that can handle both builtin and binary functions. 
-
-Only basic command lines are executed in the shell; no pipes, redirections or any other advanced features. 
+A custom shell in C. Zshhy is a UNIX command interpreter that can handle both builtin and binary functions. Only basic command lines are executed in the shell; no pipes, redirections or any other advanced features. 
 
 ## Description
 Binary functions (executables) are those found in the path, as indicated in the PATH variable. If an executable cannot be found, an error message is displayed and than the prompt is shown again. Errors are dealt with and the appropriate message is displayed on the error output. 
